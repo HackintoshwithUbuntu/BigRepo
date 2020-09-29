@@ -154,6 +154,10 @@ nav.navbar form input {
     color: #fff !important;
 }
 
+.navbar-light .navbar-nav li.active > .nav-link:hover {
+    text-decoration: underline;
+}
+
 .layout_padding {
     padding: 75px 0 50px;
 }
