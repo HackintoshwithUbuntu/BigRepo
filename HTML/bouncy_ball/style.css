@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+p {
+  color: #333;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Styling the buttons */
+.buttonArea {
+  position: static;
+  width: 100%;
+}
+
+.buttonArea > * {
+  cursor: pointer;
+  padding:10px 30px;
+  background-color:rgb(17, 0, 255);
+  color: white;
+  font-weight: bold;
+  border-radius: 5px; 
+  position: center;
+}
+
+/* The text that appears when the buttons are clicked */
+.introtext{
+  position: relative;
+  text-align: center;
+  top: 10px; 
+  visibility: hidden;
+}
+
+/* Start Button*/
+#start_but {
+    border: none;
+    background-color: rgb(255, 0, 204);
+    font-size: 17px;
+    color: rgb(247, 255, 0);
+    padding: 10px 60px;
+    font-weight: bold;
+    cursor: pointer;
+    visibility: hidden;
+}
