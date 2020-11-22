@@ -24,3 +24,9 @@ int count_digit(int number)
     }
     return count;
 }
+//Alternate count_digit
+int countDigit(int i){
+    string i_str;
+    i_str = to_string(i);
+    return(i_str.size());
+}
