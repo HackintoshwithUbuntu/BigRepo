@@ -8,31 +8,34 @@ vector<string> split(const string &);
 int loc;
 int done;
 
-int binarySearch(vector<int> arr, int l, int r, int x) 
-{ 	
-  	int m;
-	while (l <= r) { 
-		int m = l + (r - l) / 2; 
+int binarySearch(vector<int> arr, int l, int r, int x)
+{
+    int m;
+    while (l <= r)
+    {
+        int m = l + (r - l) / 2;
 
-		// Check if x is present at mid 
-		if (arr[m] == x){
+        // Check if x is present at mid
+        if (arr[m] == x)
+        {
             done = m - 1;
-			return m + 1; }
+            return m + 1;
+        }
 
-		// If x greater, ignore right half 
-		if (arr[m] > x)
-			l = m + 1; 
+        // If x greater, ignore right half
+        if (arr[m] > x)
+            l = m + 1;
 
-		// If x is smaller, ignore left half 
-		else
-			r = m - 1; 
-	} 
+        // If x is smaller, ignore left half
+        else
+            r = m - 1;
+    }
 
-	// if we reach here, then element was 
-	// not present 
+    // if we reach here, then element was
+    // not present
     done = l;
-	return l + 1; 
-} 
+    return l + 1;
+}
 
 /*
  * Complete the 'climbingLeaderboard' function below.
@@ -59,13 +62,16 @@ vector<int> climbingLeaderboard(vector<int> ranked, vector<int> player)
     done = (ranked.size() - 1);
 
     for (int i = 0; i < player.size(); ++i)
-    {   
-        /* Testing to quicken duplicates
-        if(player[i] == player[i-1]){
-            answer.push_back(answer[i-1]);
-            continue;
-        }*/
-        answer.push_back(binarySearch(ranked, 0, done, player[i]));
+    {
+        //Testing to quicken duplicates
+        if ((player[i] == player[i - 1] && i != 0) || (i != 0 && player[i] < ranked[(answer[i - 1] - 1)]))
+        {
+            answer.push_back(answer[i - 1]);
+        }
+        else
+        {
+            answer.push_back(binarySearch(ranked, 0, done, player[i]));
+        }
     }
 
     return answer;
