@@ -78,7 +78,10 @@ vector<int> climbingLeaderboard(vector<int> ranked, vector<int> player)
 }
 
 int main()
-{
+{   
+    ios_base::sync_with_stdio(false); 
+    cin.tie(NULL);   
+    
     ofstream fout(getenv("OUTPUT_PATH"));
 
     string ranked_count_temp;
