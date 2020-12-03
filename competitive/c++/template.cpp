@@ -23,4 +23,5 @@ int main()
         solve();
         ++i;
     }
+    return 0;
 }
