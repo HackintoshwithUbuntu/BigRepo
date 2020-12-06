@@ -4,16 +4,18 @@ using namespace std;
 bool isEven(int n)
 {
     // n&1 is 1, then odd, else even
-    // Change the 1 to any power of 2 
+    // Change the 1 to any power of 2
     return (!(n & 1));
 }
 
-int dividePowerOf2(int i){
+int dividePowerOf2(int i)
+{
     // Change the 1 to equal any power of 2
     return i >> 1;
 }
 
-int mulitplyPowerOf2(int i){
+int mulitplyPowerOf2(int i)
+{
     // Change the 1 to equal any power of 2
     return i << 1;
 }
@@ -29,10 +31,11 @@ int count_digit(int number)
     return count;
 }
 //Alternate count_digit
-int countDigit(int i){
+int countDigit(int i)
+{
     string i_str;
     i_str = to_string(i);
-    return(i_str.size());
+    return (i_str.size());
 }
 
 vector<int> clean(vector<int> arrayc)
@@ -46,4 +49,13 @@ vector<int> clean(vector<int> arrayc)
         }
     }
     return arrayc;
+}
+
+//initalise full array
+bool trueorfalse[100] = {0};
+
+void returnalldigitsorcharacters(string str)
+{
+    for (auto c : str)
+        cout << "[" << c << "]";
 }
