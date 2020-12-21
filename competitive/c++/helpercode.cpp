@@ -5,7 +5,7 @@ bool isEven(int n)
 {
     // n&1 is 1, then odd, else even
     // Change the 1 to any power of 2
-    return (!(n & 1));
+    return (n & 1);
 }
 
 int dividePowerOf2(int i)
