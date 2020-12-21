@@ -57,5 +57,4 @@ bool trueorfalse[100] = {0};
 void returnalldigitsorcharacters(string str)
 {
     for (auto c : str)
-        cout << "[" << c << "]";
-}
+        cout << c;
