@@ -56,5 +56,8 @@ bool trueorfalse[100] = {0};
 
 void returnalldigitsorcharacters(string str)
 {
-    for (auto c : str)
-        cout << c;
+    for (auto c : str) 
+        //Checking if digit
+        if (isdigit(c)) break;
+        // vector.push_back(c);
+}        
