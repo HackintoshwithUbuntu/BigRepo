@@ -60,4 +60,15 @@ void returnalldigitsorcharacters(string str)
         //Checking if digit
         if (isdigit(c)) break;
         // vector.push_back(c);
-}        
+}
+
+bool testIfCharacterInWord(char useIndexFromString) {
+  for(auto x: "aeiouAEIOU"){
+      // This will compare the string index (char) to each value of x, in this case all the vowels
+      // The string index can be iterated over in another loop
+      // if(x == useIndexFromString)
+      // RETURN TRUE;
+      break;
+  }
+  return false;
+}
