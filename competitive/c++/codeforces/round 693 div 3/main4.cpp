@@ -5,8 +5,8 @@ using namespace std;
 void solve() {
     int n;
     cin >> n;
-    vector<int> odd(n);
-    vector<int> even(n);
+    vector<int> odd;
+    vector<int> even;
     for(int i = 0; i < n; i++){
         int x;
         cin >> x;
@@ -21,7 +21,9 @@ void solve() {
     int a = 0;
     int b = 0;
 
-    while(even.empty() == false && odd.empty() == false){
+    while(even.size() != 0 && odd.size() != 0){
+        cout << even.size();
+        cout << even.empty();
         a += even[0];
         even.erase(even.begin());
         b += odd[0];
