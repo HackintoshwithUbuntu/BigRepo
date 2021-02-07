@@ -16,7 +16,9 @@
         "span": "cpp",
         "regex": "cpp",
         "valarray": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "ifstream": "cpp",
+        "iosfwd": "cpp"
     },
     "C_Cpp.errorSquiggles": "Enabled"
 }
