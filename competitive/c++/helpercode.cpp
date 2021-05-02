@@ -44,6 +44,7 @@ vector<int> clean(vector<int> arrayc) {
 
 // initalise full array
 bool trueorfalse[100] = {0};
+vector<bool> beacht(100,false);
 
 void returnalldigitsorcharacters(string str) {
   for (auto c : str)
