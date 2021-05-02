@@ -38,10 +38,8 @@ int main() {
             long co = 0;
             for(int o = i; o < n && (ck > 0 || beach[o] == true); o++){
                 if(beach[o] == false){
-                    if(o + x <= n){
-                        for(int p = o; p < min(x+o, n); p++)
-                            beach[p] = true;
-                    }
+                    for(int p = o; p < min(x+o, n); p++)
+                        beach[p] = true;
                     ck -= 1;
                 }
                 co = o;
