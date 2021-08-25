@@ -8,7 +8,7 @@ int main() {
     freopen("beachout.txt", "w", stdout);
 
     // Variables
-    long n, u, k, x;
+    int n, u, k, x;
     cin >> n >> u >> k >> x;
     vector<bool> beacht(n,false);
 
@@ -19,7 +19,7 @@ int main() {
         for(int q = p - 1; q <= y - 1; q++) // Filling range
             beacht[q] = true;
     }
-    long ans = 0;
+    int ans = 0;
 
     // Don't know why this is giving a TLE
     if(k == 0){
