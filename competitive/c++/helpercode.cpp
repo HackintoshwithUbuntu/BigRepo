@@ -72,7 +72,7 @@ bool prime(int n) {
 }
 
 struct custom_hash {
-    //codeforces.com/blog/entry/62393
+    //http://codeforces.com/blog/entry/62393
     //unordered_map<long long, int, custom_hash> safe_map;
     //This hash function employs some time randoming and generates hashes very fast
     static uint64_t splitmix64(uint64_t x) {
@@ -89,7 +89,7 @@ struct custom_hash {
     }
 };
 
-void TWO_d_vector(int col, int row){
+vector <vector<int>>TWO_d_vector(int col, int row){
   vector <vector<int>> v;
   v.resize(col,vector<int>(row));
 
@@ -101,5 +101,32 @@ void TWO_d_vector(int col, int row){
       {
         cin>>v[i][j];
       }
+  }
+  return v;
 }
+
+int returnxor(int n){
+  // C++ program to find XOR of numbers
+// from 1 to n.
+// Method to calculate xor
+    
+    // If n is a multiple of 4
+    if (n % 4 == 0)
+      return n;
+  
+    // If n%4 gives remainder 1
+    if (n % 4 == 1)
+      return 1;
+  
+    // If n%4 gives remainder 2
+    if (n % 4 == 2)
+      return n + 1;
+  
+    // If n%4 gives remainder 3
+    return 0;
+  // This code is contributed by rutvik_56.
 }
+
+
+
+
