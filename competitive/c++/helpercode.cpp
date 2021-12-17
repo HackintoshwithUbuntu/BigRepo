@@ -93,6 +93,10 @@ vector <vector<int>>TWO_d_vector(int col, int row){
   vector <vector<int>> v;
   v.resize(col,vector<int>(row));
 
+  // or (I'm not sure about row column order for the second one)
+
+  vector<vector<int>> v(row, vector<int>(col));
+
   //v = {{1,2,3}, {4,5,6}, {7,8,9}}; 
 
   /** input from use **/
