@@ -5,7 +5,10 @@
             "label": "C/C++: g++ build active file",
             "command": "g++",
             "args": [
-                "-std=gnu17",
+                "-std=gnu++20", 
+                "-pedantic",
+                "-Wall",
+                "-Wextra",
                 "-g",
                 "${file}",
                 "-o",
