@@ -129,6 +129,9 @@ auto maxfrommap(unordered_map<int, int> m){
   auto x = std::max_element(m.begin(), m.end(),
     [](const pair<int, int>& p1, const pair<int, int>& p2) {
         return p1.second < p2.second; });
+
+    // cout << ans->second << "\n";        // note pair referencing
+
   // you can also maintain a running tally 
   // eg. if current value bigger than last update, else keep going
   // or take all values in a vector and sort, then find longest same subsection
